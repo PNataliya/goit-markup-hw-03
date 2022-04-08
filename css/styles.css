@@ -1,20 +1,21 @@
 /* css Переменные */
 :root {
   --primary-text-color: #757575;
-  --title-text-color: #212121;
-  --accent-color: #2196f3;
-  --primary-background-color: #e5e5e5;
-  --wight-color: #ffffff;
+--title-text-color: #212121;
+--accent-color: #2196f3;
+--primary-background-color: #e5e5e5;
+--wight-color: #ffffff;
 }
 
+
 body {
-  font-family: "Roboto", Roboto, sans-serif;
+  font-family: "Roboto", "Raleway", normal;
   background-color: var(--wight-color);
 }
 
 /* Логотип */
 
-.logo, {
+.logo {
   text-decoration: none;
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -28,10 +29,31 @@ body {
   text-decoration: none;
   color: var(--accent-color);
 }
+
+
 /* часть лого в Футере */
 .logo-white {
   text-decoration: none;
   color: var(--wight-color);
+}
+
+
+.logo {
+  color: var(--promary-text-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.logo,
+.link {
+  color: var(--title-text-color);
+  text-decoration: none;
+}
+
+nav > .logo {
+  margin-right: 93px;
 }
 
 /* Шапка сайта Heder */
@@ -57,21 +79,16 @@ body {
   align-items: center;
 }
 
-nav > .logo {
-  margin-right: 93px;
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
-
 
 .list.flex {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-}
-
-.list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
 .site-nav:not(last-child) {
@@ -90,6 +107,7 @@ nav > .logo {
   letter-spacing: 0.02em;
 }
 
+
 .site-nav .link {
   text-decoration: none;
   font-weight: 500;
@@ -98,8 +116,13 @@ nav > .logo {
   letter-spacing: 0.02em;
   color: var(--title-text-color);
 }
-.site-nav .link:hover,
-.site-nav .link:focus {
+
+.current > .link {
+  color: var(--accent-color);
+}
+
+.site-nav .link, .link.link-head-contact:hover,
+.site-nav .link, .link.link-head-contact:focus {
   color: var(--accent-color);
 }
 
@@ -110,6 +133,11 @@ nav > .logo {
 .contact-list:not(:last-child) {
   margin-right: 50px;
 }
+
+.link-head-contact {
+  color: var(--primary-text-color);
+}
+
 
 .item {
   text-decoration: none;
