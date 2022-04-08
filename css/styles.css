@@ -8,14 +8,13 @@
 }
 
 body {
-  font-family: "Roboto", "Raleway", normal;
+  font-family: "Roboto", Roboto, sans-serif;
   background-color: var(--wight-color);
 }
-/* Header */
 
 /* Логотип */
 
-.logo {
+.logo, {
   text-decoration: none;
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -36,9 +35,61 @@ body {
 }
 
 /* Шапка сайта Heder */
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+.container.header {
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.navigate {
+  display: flex;
+  align-items: center;
+}
+
+nav > .logo {
+  margin-right: 93px;
+}
+
+
+.list.flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
+
+.site-nav:not(last-child) {
+  margin-right: 50px;
+}
+
+
+.site-nav,
+.link.link-head-contact {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
 .site-nav .link {
   text-decoration: none;
   font-weight: 500;
@@ -50,6 +101,14 @@ body {
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-color);
+}
+
+.list.contact {
+  margin-left: auto;
+}
+
+.contact-list:not(:last-child) {
+  margin-right: 50px;
 }
 
 .item {
