@@ -1,6 +1,7 @@
 /* css Переменные */
 :root {
-  --primary-text-color: #757575;
+--primary-text-color: #757575;
+--logo-text-color: #000000;
 --title-text-color: #212121;
 --accent-color: #2196f3;
 --primary-background-color: #e5e5e5;
@@ -22,7 +23,7 @@ body {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #000000;
+  color: var(--logo-text-color);
 }
 
 .logo-accent {
@@ -37,18 +38,7 @@ body {
   color: var(--wight-color);
 }
 
-
-.logo {
-  color: var(--promary-text-color);
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-}
-
-.logo,
 .link {
-  color: var(--title-text-color);
   text-decoration: none;
 }
 
@@ -107,6 +97,15 @@ nav > .logo {
   letter-spacing: 0.02em;
 }
 
+.link.link-head-contact:hover,
+.link.link-head-contact:focus {
+  color: var(--accent-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
 
 .site-nav .link {
   text-decoration: none;
@@ -117,14 +116,13 @@ nav > .logo {
   color: var(--title-text-color);
 }
 
+
 .current > .link {
   color: var(--accent-color);
 }
 
-.site-nav .link, .link.link-head-contact:hover,
-.site-nav .link, .link.link-head-contact:focus {
-  color: var(--accent-color);
-}
+
+
 
 .list.contact {
   margin-left: auto;
