@@ -1,0 +1,194 @@
+/* css Переменные */
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primary-background-color: #e5e5e5;
+  --wight-color: #ffffff;
+}
+
+body {
+  font-family: "Roboto", "Raleway", normal;
+  background-color: var(--wight-color);
+}
+/* Header */
+
+/* Логотип */
+
+.logo {
+  text-decoration: none;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+
+.logo-accent {
+  text-decoration: none;
+  color: var(--accent-color);
+}
+/* часть лого в Футере */
+.logo-white {
+  text-decoration: none;
+  color: var(--wight-color);
+}
+
+/* Шапка сайта Heder */
+.list {
+  list-style: none;
+}
+.site-nav .link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.item {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+.item:hover,
+.item:focus {
+  color: var(--accent-color);
+}
+
+/* ГЛАВНАЯ СТРАНИЦА */
+
+/* section Герой */
+.hero {
+  background: #2f303a;
+}
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+
+  color: var(--wight-color);
+}
+/* Button Заказать услугу */
+.hero-order {
+  font-family: inherit;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  color: var(--wight-color);
+  background-color: var(--accent-color);
+}
+
+/* section Наши качества */
+
+.about-us-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+}
+.about-us-item {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+
+/* section Чем мы занимаемся */
+
+.doing-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--title-text-color);
+}
+
+/* section Наша команда */
+
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--title-text-color);
+}
+
+.covorker-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  color: var(--title-text-color);
+}
+.covorker-position {
+  font-size: 16px;
+  line-height: 1.18;
+  color: var(--primary-text-color);
+}
+
+/* Футер */
+.about-contacts {
+  background: #2f303a;
+}
+
+.address {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--wight-color);
+}
+.contact {
+  font-size: 14px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* СТРАНИЦА ПОРТФОЛИО */
+/* section Portfolio */
+
+/* фильтр Кнопки */
+.filter .link {
+  cursor: pointer;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  color: var(--title-text-color);
+  background-color: #f5f4fa;
+}
+
+.filter .link:hover,
+.filter .link:focus {
+  color: var(--wight-color);
+  background-color: var(--accent-color);
+}
+
+/* таблица с картинками */
+
+.portfolio-title {
+  font-size: 18px;
+  line-height: 2;
+  color: var(--title-text-color);
+}
+.portfolio-text {
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--primary-text-color);
+}
