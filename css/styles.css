@@ -5,6 +5,7 @@
 --title-text-color: #212121;
 --accent-color: #2196f3;
 --primary-background-color: #e5e5e5;
+--bg-color-section: #F5F4FA;
 --wight-color: #ffffff;
 --box-shadow-card: 0px 1px 3px rgba(0, 0, 0, 0.12),0px 1px 1px rgba(0, 0, 0, 0.14),0px 2px 1px rgba(0, 0, 0, 0.2);
 --box-shadow-button: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -208,9 +209,9 @@ nav > .logo {
   padding-bottom: 0;
 }
 
-.title-section,
+.team-title,
 .hero-title,
-.worker-name,
+.covorker-title,
 .portfolio-item-title,
 .quality-title,
 .paragraph,
@@ -277,25 +278,45 @@ nav > .logo {
 
 /* section Наша команда */
 
+.team-section {
+  background-color: var(--bg-color-section);
+}
+
 .team-title {
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
-  letter-spacing: 0.03em;
 
   color: var(--title-text-color);
 }
 
+.covorker {
+  background-color: var(--wight-color)
+}
+
+.covorker-box {
+  padding: 30px 15px;
+}
+
+.covorker:not(:last-child) {
+  margin-right: 30px;
+}
+
+
 .covorker-title {
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
+  text-align: center;
   color: var(--title-text-color);
 }
 .covorker-position {
   font-size: 16px;
   line-height: 1.18;
+  text-align: center;
   color: var(--primary-text-color);
 }
 
