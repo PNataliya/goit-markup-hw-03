@@ -175,7 +175,8 @@ nav > .logo {
 .team-title,
 .hero-title,
 .covorker-title,
-.portfolio-item-title,
+.portfolio-title,
+.portfolio-text,
 .quality-title,
 .paragraph,
 .not-displayed {
@@ -393,13 +394,38 @@ nav > .logo {
 
 /* таблица с картинками */
 
+
+.portfolio-list {
+  margin-right: 30px;
+  margin-bottom: 30px;
+  background-color: var(--white-color);
+}
+
+.portfolio-list:nth-child(3n) {
+  margin-right: 0px;
+}
+
+.portfolio-box {
+  
+  padding: 20px 24px;
+  background-color: var(--wight-color);
+  border-bottom: 1px solid #eeeeee;
+}
+  
+/* .list.portfolio>.portfolio-list {
+  flex-basis: calc(100% / 3);
+} */
+
 .portfolio-title {
+  margin-bottom: 4px;
   font-size: 18px;
   line-height: 2;
+  letter-spacing: 0.06em;
   color: var(--title-text-color);
 }
 .portfolio-text {
   font-size: 16px;
   line-height: 1.87;
+  letter-spacing: 0.06em;
   color: var(--primary-text-color);
 }
