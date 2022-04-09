@@ -15,8 +15,9 @@
 
 
 body {
-  font-family: "Roboto", "Raleway", normal;
+  font-family: Roboto, sans-serif;
   background-color: var(--wight-color);
+  letter-spacing: 0.03em;
 }
 
 /* Логотип */
@@ -127,8 +128,6 @@ nav > .logo {
 }
 
 
-
-
 .list.contact {
   margin-left: auto;
 }
@@ -158,20 +157,38 @@ nav > .logo {
 /* ГЛАВНАЯ СТРАНИЦА */
 
 /* section Герой */
-.hero {
+.hero-section {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
   background: #2f303a;
 }
+
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-
   color: var(--wight-color);
+  text-transform: uppercase;
+  letter-spacing: 0,06em;
 }
 /* Button Заказать услугу */
-.hero-order {
+
+.btn {
+  font-family: inherit;
+  border: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.hero-button {
   font-family: inherit;
   cursor: pointer;
+  box-shadow: var(--box-shadow-button);
+  border-radius: 4px;
+  padding: 10px 32px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
