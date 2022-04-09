@@ -90,7 +90,12 @@ nav > .logo {
   align-items: center;
 }
 
-.site-nav:not(last-child) {
+
+.btn-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.site-nav:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -187,7 +192,7 @@ nav > .logo {
   color: var(--wight-color);
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 0,06em;
+  letter-spacing: 0.06em;
 }
 /* Button Заказать услугу */
 
@@ -196,6 +201,7 @@ nav > .logo {
   border: none;
   cursor: pointer;
   position: relative;
+  border-radius: 4px;
 }
 
 .hero-button {
@@ -355,20 +361,34 @@ nav > .logo {
 /* section Portfolio */
 
 /* фильтр Кнопки */
-.filter .link {
+
+.list.button-filter-list {
+  margin-bottom: 50px;
+}
+
+.list.button-filter-list {
+  justify-content: center;
+}
+
+
+.button-filter {
+  padding: 6px 22px;
   cursor: pointer;
   font-family: "Roboto";
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
+  text-align: center;
+
   color: var(--title-text-color);
   background-color: #f5f4fa;
 }
 
-.filter .link:hover,
-.filter .link:focus {
+.button-filter:hover,
+.button-filter:focus {
   color: var(--wight-color);
   background-color: var(--accent-color);
+  box-shadow: var(--box-shadow-active-btn-filter);
 }
 
 /* таблица с картинками */
