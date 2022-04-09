@@ -204,6 +204,10 @@ nav > .logo {
   padding-bottom: 94px;
 }
 
+.section.quality {
+  padding-bottom: 0;
+}
+
 .title-section,
 .hero-title,
 .worker-name,
@@ -257,14 +261,18 @@ nav > .logo {
 
 /* section Чем мы занимаемся */
 
-.doing-title {
+.title-section {
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
-  letter-spacing: 0.03em;
 
   color: var(--title-text-color);
+}
+
+.specialization-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 /* section Наша команда */
