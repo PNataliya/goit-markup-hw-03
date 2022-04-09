@@ -167,6 +167,17 @@ nav > .logo {
   background: #2f303a;
 }
 
+.team-title,
+.hero-title,
+.covorker-title,
+.portfolio-item-title,
+.quality-title,
+.paragraph,
+.not-displayed {
+  padding: 0px;
+  margin: 0px;
+}
+
 .hero-title {
   margin-top: 0;
   margin-bottom: 30px;
@@ -211,16 +222,6 @@ nav > .logo {
   padding-bottom: 0;
 }
 
-.team-title,
-.hero-title,
-.covorker-title,
-.portfolio-item-title,
-.quality-title,
-.paragraph,
-.not-displayed {
-  padding: 0px;
-  margin: 0px;
-}
 
 .visually-hidden {
   position: absolute;
