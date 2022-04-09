@@ -41,6 +41,8 @@ body {
 
 /* часть лого в Футере */
 .logo-white {
+  display: inline-block;
+  margin-bottom: 20px;
   text-decoration: none;
   color: var(--wight-color);
 }
@@ -298,6 +300,8 @@ nav > .logo {
 
 .covorker-box {
   padding: 30px 15px;
+  box-shadow: var(--box-shadow-card);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .covorker:not(:last-child) {
@@ -322,15 +326,23 @@ nav > .logo {
 
 /* Футер */
 .about-contacts {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background: #2f303a;
 }
 
 .address {
+  margin-bottom: 9px;
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   color: var(--wight-color);
 }
+
+.adress-list {
+  margin-bottom: 9px;
+}
+
 .contact {
   font-size: 14px;
   text-decoration: none;
